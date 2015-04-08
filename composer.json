@@ -1,7 +1,6 @@
 {
     "name": "kanellov/slim-skeleton",
     "description": "Skeleton for Slim applications",
-    "version": "0.0.1",
     "type": "application",
     "keywords": [
         "slim framework", "skeleton", "application"
