@@ -1,2 +1,2 @@
-# slim-multiapp-skeleton
-Skeleton for multi Slim applications
+# Slim skeleton application
+Basic slim application skeleton
