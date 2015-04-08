@@ -1,0 +1,35 @@
+{
+    "name": "kanellov/slim-skeleton",
+    "description": "Skeleton for Slim applications",
+    "version": "0.0.1",
+    "type": "application",
+    "keywords": [
+        "slim framework", "skeleton", "application"
+    ],
+    "homepage": "https://github.com/kanellov/slim-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vassilis Kanellopoulos",
+            "email": "contact@kanellov.com",
+            "homepage": "http://kanellov.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact@kanellov.com",
+        "issues": "https://github.com/kanellov/slim-skeleton/issues",
+        "source": "https://github.com/kanellov/slim-skeleton"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "slim/slim": "~2.0",
+        "slim/views": "~0.1",
+        "twig/twig": "~1.0",
+        "kanellov/config-merge": "dev-master",
+        "monolog/monolog": "~1.0"
+    },
+    "require-dev": {
+        "funkatron/funit": "0.6.0"
+    }
+}
