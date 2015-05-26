@@ -1,16 +1,6 @@
 <?php
 $finder = Symfony\CS\Finder\DefaultFinder::create()
-    ->notPath('Zend/View/Stream.php')
-    ->notPath('ZendTest/Code/Generator/TestAsset')
-    ->notPath('ZendTest/Code/Reflection/FunctionReflectionTest.php')
-    ->notPath('ZendTest/Code/Reflection/MethodReflectionTest.php')
-    ->notPath('ZendTest/Code/Reflection/TestAsset')
-    ->notPath('ZendTest/Code/TestAsset')
-    ->notPath('ZendTest/Validator/_files')
-    ->notPath('ZendTest/Loader/_files')
-    ->notPath('ZendTest/Loader/TestAsset')
-    ->notPath('demos')
-    ->notPath('resources')
+    ->notPath('data')
     // Following are necessary when you use `parallel` or specify a path
     // from the project root.
     ->notPath('Stream.php')
@@ -55,6 +45,16 @@ $config->fixers(
         'unused_use',
         'visibility',
         'whitespacy_lines',
+        'ternary_spaces',
+        'align_double_arrow',
+        'align_equals',
+        'concat_with_spaces',
+        'ordered_use',
+        'single_array_no_trailing_comma',
+        'multiline_array_trailing_comma',
+        'spaces_cast',
+        'return',
+        'double_arrow_multiline_whitespaces',
     )
 );
 $config->finder($finder);
