@@ -1,6 +1,6 @@
 {
     "name": "kanellov/slim-skeleton",
-    "description": "Skeleton for Slim applications",
+    "description": "Skeleton for Slim 3 applications",
     "type": "application",
     "keywords": [
         "slim framework", "skeleton", "application"
@@ -21,14 +21,13 @@
         "source": "https://github.com/kanellov/slim-skeleton"
     },
     "require": {
-        "php": ">=5.3.0",
-        "slim/slim": "~2.0",
-        "slim/views": "~0.1",
-        "twig/twig": "~1.0",
-        "kanellov/config-merge": "dev-master",
-        "monolog/monolog": "~1.0"
+        "php": ">=5.5.0",
+        "slim/slim": "^3.0"
     },
     "require-dev": {
-        "funkatron/funit": "0.6.0"
+        "fabpot/php-cs-fixer": "1.*",
+        "phpunit/PHPUnit": "4.*",
+        "satooshi/php-coveralls": "dev-master",
+        "phpunit/phpcov": "2.*"
     }
 }
