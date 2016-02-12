@@ -1,18 +1,17 @@
 {
     "name": "kanellov/slim-skeleton",
     "description": "Skeleton for Slim applications",
-    "type": "application",
+    "type": "library",
     "keywords": [
-        "slim framework", "skeleton", "application"
+        "slim framework", "library"
     ],
     "homepage": "https://github.com/kanellov/slim-skeleton",
-    "license": "MIT",
+    "license": "GNU GPLv3",
     "authors": [
         {
             "name": "Vassilis Kanellopoulos",
             "email": "contact@kanellov.com",
-            "homepage": "http://kanellov.com",
-            "role": "Developer"
+            "homepage": "http://kanellov.com"
         }
     ],
     "support": {
@@ -21,14 +20,20 @@
         "source": "https://github.com/kanellov/slim-skeleton"
     },
     "require": {
-        "php": ">=5.3.0",
-        "slim/slim": "~2.0",
-        "slim/views": "~0.1",
-        "twig/twig": "~1.0",
-        "kanellov/config-merge": "dev-master",
-        "monolog/monolog": "~1.0"
+        "php": ">=5.5.0"
     },
     "require-dev": {
-        "funkatron/funit": "0.6.0"
+        "fabpot/php-cs-fixer": "1.*",
+        "phpunit/PHPUnit": "4.*",
+        "phpunit/phpcov": "2.*",
+        "slim/slim": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Knlv\\": "src/"
+        },
+        "files": [
+            "src/utils.php"
+        ]
     }
 }
