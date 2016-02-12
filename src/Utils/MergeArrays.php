@@ -9,6 +9,13 @@
 
 namespace Knlv\Utils;
 
+/**
+ * Merges the values of the $new array into $merged array
+ * 
+ * @param array $merged
+ * @param array $new
+ * @return array
+ */
 class MergeArrays
 {
     public function __invoke(array $merged, array $new)

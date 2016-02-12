@@ -9,8 +9,20 @@
 
 namespace Knlv\Utils;
 
+/**
+ * Caches the contents of array into a file.
+ */
 class CacheArray
 {
+    /**
+     * The first time called writes the array contents into a file.
+     * The following times if the file is readable retrieves the array
+     * from file.
+     * 
+     * @param array $data
+     * @param string $file
+     * @return array
+     */
     public function __invoke(array $data, $file)
     {
         if ($file && is_readable($file)) {
@@ -19,7 +31,7 @@ class CacheArray
 
         if ($file && is_writable($file)) {
             file_put_contents(
-                $this->file,
+                $file,
                 '<?php return ' . var_export($data, true) . ';'
             );
         }

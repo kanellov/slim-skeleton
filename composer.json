@@ -31,9 +31,6 @@
     "autoload": {
         "psr-4": {
             "Knlv\\": "src/"
-        },
-        "files": [
-            "src/utils.php"
-        ]
+        }
     }
 }
