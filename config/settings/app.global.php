@@ -19,6 +19,6 @@
     ],
     'logger' => [
         'name' => 'app',
-        'path' => __DIR__ . 'data/log/app.log',
+        'path' => 'data/log/app.log',
     ],
 ];

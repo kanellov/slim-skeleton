@@ -19,6 +19,6 @@ return [
     ],
     'logger' => [
         'name' => 'app',
-        'path' => __DIR__ . '/../log/app.log',
+        'path' => 'data/log/app.log',
     ],
 ];

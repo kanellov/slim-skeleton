@@ -22,7 +22,7 @@ class Monolog
         $logger->pushProcessor(new UidProcessor());
         $logger->pushHandler(new StreamHandler(
             $settings['logger']['path'],
-            Logger::ERROR
+            Logger::INFO
         ));
 
         return $logger;

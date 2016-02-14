@@ -13,8 +13,14 @@ return [
             'flash' => Slim\Flash\Messages::class,
         ],
         'services' => [
-            'logger'                => App\Service\Monolog::class,
-            App\Action\Index::class => App\Action\IndexFactory::class,
+            'logger'                         => App\Service\Monolog::class,
+            App\Action\Index::class          => App\Action\IndexFactory::class,
+            App\Middleware\LogRequest::class => App\Middleware\LogRequestFactory::class,
+        ],
+    ],
+    'middleware' => [
+        'log-request' => [
+            'handler' => App\Middleware\LogRequest::class,
         ],
     ],
     'routes' => [
