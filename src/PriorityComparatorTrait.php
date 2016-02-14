@@ -7,7 +7,7 @@
  * @license GNU GPLv3 http://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
 
-namespace Knlv\Utils;
+namespace Knlv\Slim\Modules;
 
 /**
  * Provides method to order array elements using priority comparator

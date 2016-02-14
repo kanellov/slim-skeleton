@@ -20,7 +20,8 @@
         "source": "https://github.com/kanellov/slim-skeleton"
     },
     "require": {
-        "php": ">=5.5.0"
+        "php": ">=5.5.0",
+        "kanellov/php-events": "^2.0"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "1.*",
@@ -30,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Knlv\\": "src/"
+            "Knlv\\Slim\\Modules\\": "src/"
         }
     }
 }
