@@ -15,6 +15,12 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/kanellov/slim-modules.git"
+        }
+    ],
     "support": {
         "email": "contact@kanellov.com",
         "issues": "https://github.com/kanellov/slim-skeleton/issues",
@@ -22,7 +28,11 @@
     },
     "require": {
         "php": ">=5.5.0",
-        "slim/slim": "^3.0"
+        "slim/slim": "^3.0",
+        "kanellov/slim-modules": "dev-develop",
+        "slim/twig-view": "^2.0",
+        "slim/flash": "^0.1.0",
+        "monolog/monolog": "^1.13"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "1.*",
